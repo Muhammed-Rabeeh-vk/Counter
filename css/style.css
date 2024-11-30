@@ -6,64 +6,45 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #e0e0e0;
+    background: linear-gradient(135deg, #09e21c, #01cbfd);
     font-family: Arial, sans-serif;
-    color: #333;
+    color: white;
 }
 
 #screen {
-    background: #e0e0e0;
-    width: 150px;
-    height: 150px;
-    color: #333;
+    background: #000;
+    width: 120px;
+    height: 120px;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: inset 8px 8px 15px #bebebe, inset -8px -8px 15px #ffffff;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
-#controls, #set-controls {
+#controls {
     display: flex;
     gap: 15px;
-    margin-top: 10px;
-}
-
-input[type="number"] {
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 20px;
-    background: #e0e0e0;
-    outline: none;
-    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
-    width: 120px;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-}
-
-input[type="number"]:focus {
-    box-shadow: inset 8px 8px 15px #bebebe, inset -8px -8px 15px #ffffff;
 }
 
 button {
-    background: #e0e0e0;
-    color: #333;
+    background: #444;
+    color: white;
     border: none;
-    border-radius: 20px;
-    padding: 15px 25px;
+    border-radius: 10px;
+    padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s, background 0.3s;
 }
 
 button:hover {
-    box-shadow: inset 8px 8px 15px #bebebe, inset -8px -8px 15px #ffffff;
+    background: #666;
 }
 
 button:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
