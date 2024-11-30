@@ -1,6 +1,7 @@
 // Initialize count with localStorage value or 0
 let count = localStorage.getItem("counter") ? parseInt(localStorage.getItem("counter")) : 0;
 
+
 // Select DOM elements
 const screen = document.querySelector("#screen");
 const incrementBtn = document.querySelector("#increment");
